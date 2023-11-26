@@ -1,4 +1,6 @@
+import 'package:color_class/components/theme.dart';
 import 'package:color_class/screens/home.dart';
+import 'package:color_class/screens/mode.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +12,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeClass.lightTheme,
+      darkTheme: ThemeClass.darkTheme,
       home: Scaffold(
-        body: HomeScreen(),
+        body: ModeScreen(),
       ),
     );
   }
