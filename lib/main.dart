@@ -16,7 +16,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeClass.lightTheme,
       darkTheme: ThemeClass.darkTheme,
       home: Scaffold(
-        body: ModeScreen(),
+        body: HomeScreen(),
       ),
     );
   }
